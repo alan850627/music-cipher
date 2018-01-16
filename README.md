@@ -1,6 +1,8 @@
 # Music cipher
 
-Enter English, converts into music based on the following table:
+Enter English, converts into music based on various lookup tables.
+
+### French:
 
 | Music representation | A | B | C | D | E | F | G |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -8,6 +10,28 @@ Enter English, converts into music based on the following table:
 | Quarter note | H | I | J | K | L | M | N |
 | Eigth note | O | P | Q | R | S | T | U | 
 | 16th note | V | W | X | Y | Z | N/A | N/A |
+
+### Keyboard:
+On a qwerty keyboard, we go from up to down, and left to right, each key incremented by a half step starting on C3. That is, "1" gets mapped to C3, "q" to "C#3", "a" to "D3", "Z" to "D#3", "2" to "E" and so on. The complete lookup table: `1qaz2wsx3edc 4rfv5tgb6yhn7ujm8ik,9ol.0p;/-[`. Each note is a 16th note long.
+
+### Chords:
+We map the alphabet to notes using this table:
+| Alphabet | Note |
+| --- | --- |
+| BCD | C |
+| A | C# |
+| FGH | D |
+| E | D# |
+| JKL | E | 
+| MNP | F |
+| I | F# |
+| QRS | G |
+| O | G# |
+| TVW | A |
+| U | A# |
+| XYZ | B |
+
+Each group of English letters are grouped into chords. That is, we split at each non-English-alphabet character. Each chord is a quarter note long.
 
 ## Setup
 
@@ -43,4 +67,5 @@ node keyboard.js "alan is the best" alan.mid
 
 ## Note
 * I noticed inaccuracies when importing these MIDI files into Finale, but this is due to Finale trying to make the music look _pretty_ by extending some notes and deleting rests. I've verified the result with a MIDI sequencer, and the output is accurate to my knowledge. 
+* You can obviosuly change the behavior of these mappings. Javascript is easy to understand.
 * I should probably make this output MusicXML too, but I'll worry about that later.
