@@ -42,5 +42,5 @@ node index.js "alan is the best" alan.mid
 * The octave of the note is chosen so that jumps between successive notes are minimal.
 
 ## Note
-* I noticed inaccuracies when importing these MIDI files into Finale, but this is due to Finale trying to make the music look _pretty_ by extending some notes into rests. I've verified the result with a MIDI sequencer, and the output is accurate to my knowledge. 
+* I noticed inaccuracies when importing these MIDI files into Finale, but this is due to Finale trying to make the music look _pretty_ by extending some notes and deleting rests. I've verified the result with a MIDI sequencer, and the output is accurate to my knowledge. 
 * I should probably make this output MusicXML too, but I'll worry about that later.
