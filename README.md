@@ -9,4 +9,4 @@ Diatonic version:
 | Half note | A | B | C | D | E | F | G |
 | Quarter note | H | I | J | K | L | M | N |
 | Eigth note | O | P | Q | R | S | T | U | 
-| 16th note | V | W | X | Y | Z | unused | unused |
+| 16th note | V | W | X | Y | Z | N/A | N/A |
