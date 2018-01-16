@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/alan850627/music-cipher/issues"
   },
-  "homepage": "https://github.com/alan850627/music-cipher#readme"
+  "homepage": "https://github.com/alan850627/music-cipher#readme",
+  "dependencies": {
+    "jsmidgen": "^0.1.5"
+  }
 }
