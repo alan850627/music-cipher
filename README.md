@@ -16,22 +16,22 @@ On a qwerty keyboard, we go from up to down, and left to right, each key increme
 
 ### Chords:
 We map the alphabet to notes using this table:
-| Alphabet | Note |
-| --- | --- |
-| BCD | C |
-| A | C# |
-| FGH | D |
-| E | D# |
-| JKL | E | 
-| MNP | F |
-| I | F# |
-| QRS | G |
-| O | G# |
-| TVW | A |
-| U | A# |
-| XYZ | B |
 
-Each group of English letters are grouped into chords. That is, we split at each non-English-alphabet character. Each chord is a quarter note long.
+* Alphabet: Note
+* BCD: C
+* A: C#
+* FGH: D
+* E: D#
+* JKL: E 
+* MNP: F
+* I: F#
+* QRS: G
+* O: G#
+* TVW: A
+* U: A#
+* XYZ: B
+
+Each group of English letters are grouped into chords. That is, we split at each non-English-alphabet character. The chord is built so that the first letter of each word is the lowest note, in the MIDI 3rd octave range. Then, each successive letter will stack on top of the previous note, jumping octaves if necessary. Each chord is a quarter note long. 
 
 ## Setup
 
