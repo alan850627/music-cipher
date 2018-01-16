@@ -11,6 +11,11 @@ Enter English, converts into music based on various lookup tables.
 | Eigth note | O | P | Q | R | S | T | U | 
 | 16th note | V | W | X | Y | Z | N/A | N/A |
 
+* This script relies on the `jsmidgen` library to create the midi file.   
+* The cipher works in a way of a lookup table, where each letter is mapped one-to-one to a note and some duration.   
+* Each non-English alphabet characters are represented by rests. The duration of the rest is the same as the previous note's duration.   
+* The octave of the note is chosen so that jumps between successive notes are minimal.
+
 ### Keyboard:
 On a qwerty keyboard, we go from up to down, and left to right, each key incremented by a half step starting on C3. That is, "1" gets mapped to C3, "q" to "C#3", "a" to "D3", "Z" to "D#3", "2" to "E" and so on. The complete lookup table: `1qaz2wsx3edc 4rfv5tgb6yhn7ujm8ik,9ol.0p;/-[`. Each note is a 16th note long.
 
@@ -58,12 +63,6 @@ another example:
 ```
 node keyboard.js "alan is the best" alan.mid
 ```
-
-## How it works
-* This script relies on the `jsmidgen` library to create the midi file.   
-* The cipher works in a way of a lookup table, where each letter is mapped one-to-one to a note and some duration.   
-* Each non-English alphabet characters are represented by rests. The duration of the rest is the same as the previous note's duration.   
-* The octave of the note is chosen so that jumps between successive notes are minimal.
 
 ## Note
 * I noticed inaccuracies when importing these MIDI files into Finale, but this is due to Finale trying to make the music look _pretty_ by extending some notes and deleting rests. I've verified the result with a MIDI sequencer, and the output is accurate to my knowledge. 
