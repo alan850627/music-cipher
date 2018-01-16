@@ -39,7 +39,7 @@ node index.js "alan is the best" alan.mid
 * This script relies on the `jsmidgen` library to create the midi file.   
 * The cipher works in a way of a lookup table, where each letter is mapped one-to-one to a note and some duration.   
 * Each non-English alphabet characters are represented by rests. The duration of the rest is the same as the previous note's duration.   
-* The octave of the note is chosen so that jumps between successive notes would be minimal.
+* The octave of the note is chosen so that jumps between successive notes are minimal.
 
 ## Note
 * I noticed inaccuracies when importing these MIDI files into Finale, but this is due to Finale trying to make the music look _pretty_ by extending some notes into rests. I've verified the result with a MIDI sequencer, and the output is accurate to my knowledge. 
