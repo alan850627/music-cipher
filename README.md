@@ -21,18 +21,18 @@ npm install
 ## Run
 A generic command:
 ```
-node index.js <message-in-quotes> <file-name>
+node <file>.js <message-in-quotes> <file-name>
 ```
 
 an example:
 ```
-node index.js "hi praetor how are you"
+node french.js "hi praetor how are you"
 ```
 Note: not providing a filename will create a generic `out.mid` file.
 
 another example:
 ```
-node index.js "alan is the best" alan.mid
+node keyboard.js "alan is the best" alan.mid
 ```
 
 ## How it works
