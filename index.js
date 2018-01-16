@@ -38,15 +38,15 @@ function findDuration(c) {
 function findOctave(curNote, prevNote, curOct) {
   /* may need to limit the octave if it goes out of range of midi */
   if (curNote.match(/a|b/i)) {
-    curNote = curNote.charCodeAt(0) - 90
+    curNote = curNote.charCodeAt(0) - 88
   } else {
-    curNote = curNote.charCodeAt(0) - 97
+    curNote = curNote.charCodeAt(0) - 95
   }
 
   if (prevNote.match(/a|b/i)) {
-    prevNote = prevNote.charCodeAt(0) - 90
+    prevNote = prevNote.charCodeAt(0) - 88
   } else {
-    prevNote = prevNote.charCodeAt(0) - 97
+    prevNote = prevNote.charCodeAt(0) - 95
   }
 
   if (curNote === prevNote) {
