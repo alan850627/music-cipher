@@ -35,7 +35,7 @@ Each group of English letters are grouped into chords. That is, we split at each
 
 ## Setup
 
-First, install [Node.js](https://nodejs.org/en/), then copy this project:
+First, install [Node.js](https://nodejs.org/en/) and git, then copy this project:
 ```
 git clone https://github.com/alan850627/music-cipher.git
 cd music-ciper
