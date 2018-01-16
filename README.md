@@ -11,7 +11,7 @@ Enter English, converts into music based on the following table:
 
 ## Setup
 
-Install Node.js and npm, then run
+First, install [Node.js](https://nodejs.org/en/), then copy this project:
 ```
 git clone https://github.com/alan850627/music-cipher.git
 cd music-ciper
@@ -19,6 +19,7 @@ npm install
 ```
 
 ## Run
+A generic command:
 ```
 node index.js <message-in-quotes> <file-name>
 ```
