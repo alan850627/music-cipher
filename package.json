@@ -1,0 +1,23 @@
+{
+  "name": "music-cipher",
+  "version": "1.0.0",
+  "description": "enter a message and generates midi file",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alan850627/music-cipher.git"
+  },
+  "keywords": [
+    "music",
+    "ciper"
+  ],
+  "author": "Alan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alan850627/music-cipher/issues"
+  },
+  "homepage": "https://github.com/alan850627/music-cipher#readme"
+}
